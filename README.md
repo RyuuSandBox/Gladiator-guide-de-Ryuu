@@ -104,7 +104,7 @@ checklists demandent JS.
 Trois choses à connaître avant de le partager, parce qu'elles sont assumées dans le
 texte plutôt que cachées :
 
-- **La classe n'a pas été jouée par l'auteur.** C'est une compilation vérifiée, pas un
+- **La classe n'a pas été jouée par l'auteur.** C'est un dossier recoupé, pas un
   retour d'expérience — contrairement au guide Assassin. Le chapitre 2 expose la méthode
   et les quatre niveaux de fiabilité utilisés.
 - **Six désaccords entre sources sont documentés** au chapitre 18, avec ce que dit chaque
