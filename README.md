@@ -10,7 +10,7 @@ GitHub Pages.
 
 | Fichier | Rôle |
 |---|---|
-| `index.html` | Le guide. 19 chapitres, ~195 Ko, tout est dedans (CSS, JS, avatar). |
+| `index.html` | Le guide. 19 chapitres, ~200 Ko, tout est dedans (CSS, JS, avatar). |
 | `icons/` | Les 35 icônes officielles des sorts. Vérifiées une par une. |
 | `README.md` | Ce fichier. |
 
@@ -109,8 +109,9 @@ texte plutôt que cachées :
   et les quatre niveaux de fiabilité utilisés.
 - **Six désaccords entre sources sont documentés** au chapitre 18, avec ce que dit chaque
   camp et l'arbitrage retenu, y compris sur le nombre de slots de stigma.
-- **Le chapitre 12 (macro) est incomplet** et le dit : la seule vidéo qui la détaille
-  n'a pas pu être transcrite.
+- **Le chapitre 12 (macro) reprend une source unique**, une vidéo coréenne dédiée, dont
+  l'auteur précise viser le confort et non le DPS maximal. Le chapitre le dit, et rappelle
+  de vérifier les règles d'utilisation avant d'activer une macro matérielle répétitive.
 
 ---
 
