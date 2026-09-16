@@ -322,9 +322,10 @@ td.k .ic{width:15px; height:15px; color:var(--edge); margin-right:5px; vertical-
 .cmp .a .who{color:var(--aether-ink);}
 .cmp .b .who{color:var(--gold-ink);}
 .cmp3 .row{grid-template-columns:1fr;}
-@media (min-width:830px){ .cmp3 .row{grid-template-columns:126px 1fr 1fr 1fr;} }
+@media (min-width:830px){ .cmp3 .row{grid-template-columns:170px 1fr 1fr 1fr;} }
 @media (min-width:830px){ .cmp3 .c{border-left:1px solid var(--line);} }
 .cmp3 .c .who{color:var(--violet-ink);}
+.cmp .c > b{display:block; color:var(--ink); margin-bottom:3px;}
 
 /* ============================================================
    checklists
@@ -613,7 +614,7 @@ html.js .rv.in{opacity:1; transform:none;}
     </div>
 
     <p class="dek">Le Gladiator, je ne l'ai pas joué. Sur l'Assassin je parlais de mon perso ; ici je parle de ce que j'ai vérifié. J'ai pris un planner chiffré, deux dossiers de joueurs endgame taïwanais, deux vidéos de lancement et une vidéo coréenne dédiée à la macro, je les ai mis côte à côte, et quand ils ne disaient pas la même chose j'ai tranché en expliquant pourquoi. <strong>Tout ce que vous lisez ici vient d'au moins deux sources qui se recoupent</strong> — et quand ce n'est pas le cas, c'est écrit.</p>
-    <p class="byline">Un planner complet lu au node près, 5 guides vidéo dépouillés, 3 dossiers web croisés &middot; écrit le 16 septembre 2026, avant l'ouverture des serveurs</p>
+    <p class="byline">Un planner complet lu au node près, 5 guides vidéo dépouillés, 3 dossiers web croisés &middot; dernière mise à jour le 16 septembre 2026</p>
 
     <dl class="strip">
       <div><dt>Rôle</dt><dd>Melee bruiser<span class="sub">DPS de front, off-tank</span></dd></div>
@@ -651,19 +652,20 @@ html.js .rv.in{opacity:1; transform:none;}
           <div class="card"><span class="tag">La singularité</span><h4><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-front"/></svg>Le placement frontal</h4><p>Un patch récent a basculé le bonus de dégâts sur les attaques de face. L'Assassin tourne autour du boss ; vous, vous restez plantés devant.</p></div>
         </div>
 
-        <h3>Ce que la classe fait, dit par ceux qui la jouent</h3>
+        <h3>La même question posée à mes trois sources</h3>
+        <p class="capt">Trois joueurs, deux questions. Chaque colonne est une réponse, avec le nom de la source au-dessus.</p>
         <div class="cmp cmp3">
           <div class="row">
-            <div class="q">L'identité</div>
-            <div class="c"><span class="who">Guide Taïwan · endgame</span><em>Melee bruiser.</em> Sustain DPS élevé, grosse AoE, bon mono-cible, très résistant, capable d'off-tank, excellent en PvP de petite échelle, et <strong>très dépendant de l'équipement</strong>.</div>
-            <div class="c"><span class="who">Compilation top joueurs</span>La classe tourne autour d'<span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span> et de son chain skill. Tout le build sert à en faire tomber le plus possible.</div>
-            <div class="c"><span class="who">Guide de lancement</span>« Combattant semi-tank, ou plus précisément combattant lourd. » Avec le bon build, il encaisse les boss et emmène le groupe en donjon.</div>
+            <div class="q">C'est quoi, un Gladiator&nbsp;?</div>
+            <div class="c"><span class="who">Guide Taïwan · endgame</span><b>Un bruiser complet.</b> <em>Melee bruiser</em>, sustain DPS élevé, grosse AoE, bon mono-cible, très résistant, capable d'off-tank, bon en PvP de petite échelle, et <strong>très dépendant du stuff</strong>.</div>
+            <div class="c"><span class="who">Compilation top joueurs</span><b>Un sort, et tout le reste autour.</b> La classe tourne autour d'<span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span> et de son chain skill. Tout le build sert à en faire tomber le plus possible.</div>
+            <div class="c"><span class="who">Guide de lancement</span><b>Un tank qui tape.</b> « Combattant semi-tank, ou plus précisément combattant lourd. » Avec le bon build, il encaisse les boss et emmène le groupe en donjon.</div>
           </div>
           <div class="row">
-            <div class="q">Le piège</div>
-            <div class="c"><span class="who">Guide Taïwan · endgame</span>« Vous n'essayez pas de supprimer quelqu'un instantanément. Vous êtes un combattant de première ligne qui gagne en restant collé, en survivant et en mettant de la pression en continu. »</div>
-            <div class="c"><span class="who">Compilation top joueurs</span>La classe est simple, mais l'<strong>uptime</strong> fait tout. Chaque seconde passée loin du boss est une seconde sans <span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span>.</div>
-            <div class="c"><span class="who">Guide de lancement</span>« Mal buildée, la classe a l'air très faible. Elle dépend énormément de ses passifs. » Contrairement au Sorcerer ou au Ranger, un build moyen ne pardonne pas.</div>
+            <div class="q">Qu'est-ce qui le fait rater&nbsp;?</div>
+            <div class="c"><span class="who">Guide Taïwan · endgame</span><b>Vouloir le jouer burst.</b> « Vous n'essayez pas de supprimer quelqu'un instantanément. Vous êtes un combattant de première ligne qui gagne en restant collé, en survivant et en mettant de la pression en continu. »</div>
+            <div class="c"><span class="who">Compilation top joueurs</span><b>Décrocher du boss.</b> La classe est simple, mais l'<strong>uptime</strong> fait tout. Chaque seconde passée loin du boss est une seconde sans <span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span>.</div>
+            <div class="c"><span class="who">Guide de lancement</span><b>Un build fait à moitié.</b> « Avec un mauvais build, la classe a l'air très faible. Elle dépend énormément de ses passifs. » Contrairement au Sorcerer ou au Ranger, un build moyen ne pardonne pas.</div>
           </div>
         </div>
 
@@ -771,9 +773,9 @@ html.js .rv.in{opacity:1; transform:none;}
         <h3>Comment un sort dépasse le niveau 20</h3>
         <p>Le planner affiche <em>/20</em> partout, mais les relevés de top joueurs montrent des passifs à 28, à 31, et des actifs à 22. Le truc derrière vaut le coup d'être connu tôt, parce qu'il change l'ordre de vos dépenses.</p>
         <div class="note gold">
-          <span class="lab"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-chain"/></svg>Chaque sort cappé finance le suivant</span>
+          <span class="lab"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-chain"/></svg>Chaque sort monté au cap finance le suivant</span>
           <p>« Une fois que vous atteignez le niveau 20, vous gagnez un stigma supplémentaire, le <strong>jaune</strong>, que vous pouvez utiliser sur une compétence déjà au niveau 20 ou plus. Vous pouvez ainsi la monter jusqu'à <strong>25</strong>. Plus vous avez de compétences au 20, plus vous en récupérez. »</p>
-          <p>Autrement dit, monter un sort au 20 ne rapporte pas seulement ses trois nodes, ça débloque une monnaie qui sert à pousser un autre sort au-delà du plafond. D'où l'intérêt de capper vite les trois sorts cœur plutôt que d'étaler.</p>
+          <p>Autrement dit, monter un sort au 20 ne rapporte pas seulement ses trois nodes, ça débloque une monnaie qui sert à pousser un autre sort au-delà du plafond. D'où l'intérêt de monter vite les trois sorts cœur au cap plutôt que d'étaler.</p>
         </div>
       </section>
       <!-- ============ 5 ============ -->
@@ -815,7 +817,7 @@ html.js .rv.in{opacity:1; transform:none;}
             <span class="icbox"><svg class="ic" aria-hidden="true" focusable="false" data-skill="crushing-wave"><use href="#i-wave"/></svg></span>
             <div>
               <div class="h"><span class="nm">Crushing Wave</span><span class="goal">→ 12 ou 20</span></div>
-              <p>Votre plus grosse AoE. Le seul sort qu'on cappe pour son confort et pas pour les donjons — le planner est explicite là-dessus : « à monter au 20 uniquement pour le farm de mobs ».</p>
+              <p>Votre plus grosse AoE. Le seul sort qu'on monte au 20 pour son confort et pas pour les donjons — le planner est explicite là-dessus : « à monter au 20 uniquement pour le farm de mobs ».</p>
             </div>
           </div>
           <div class="sk-card">
@@ -870,7 +872,7 @@ html.js .rv.in{opacity:1; transform:none;}
         </div>
 
         <h3>La priorité de montée</h3>
-        <p class="capt">Colonne de droite : les niveaux moyens relevés chez les Gladiators les mieux classés sur la version taïwanaise. Prenez l'ordre, pas les valeurs — au lancement vous n'aurez de quoi capper que les trois premiers.</p>
+        <p class="capt">Colonne de droite : les niveaux moyens relevés chez les Gladiators les mieux classés sur la version taïwanaise. Prenez l'ordre, pas les valeurs — au lancement vous n'aurez de quoi monter au cap que les trois premiers.</p>
         <div class="tw">
           <table>
             <thead><tr><th scope="col">#</th><th scope="col">Sort</th><th scope="col">Pourquoi à ce rang</th><th scope="col" class="num">Niv. moyen top</th></tr></thead>
@@ -1012,7 +1014,7 @@ html.js .rv.in{opacity:1; transform:none;}
             <tbody>
               <tr><td class="k">1</td><td class="k"><svg class="ic" aria-hidden="true" focusable="false" data-skill="experienced-counterstrike"><use href="#i-front"/></svg>Experienced Counterstrike</td><td>Bonus de dégâts <strong>frontaux</strong>, et bonus de dégâts au block <strong>pour tout le groupe</strong></td><td class="num">31</td></tr>
               <tr><td class="k">2</td><td class="k"><svg class="ic" aria-hidden="true" focusable="false" data-skill="attack-preparation"><use href="#i-rage"/></svg>Attack Preparation</td><td>Damage boost, défense et précision. Le rééquilibrage récent en a fait un bonus frontal</td><td class="num">29</td></tr>
-              <tr><td class="k">3</td><td class="k"><svg class="ic" aria-hidden="true" focusable="false" data-skill="murderous-burst"><use href="#i-crit"/></svg>Murderous Burst</td><td>Buff qui <strong>stacke au coup porté</strong> ; à 5 stacks il inflige des dégâts et augmente les dégâts critiques</td><td class="num">28</td></tr>
+              <tr><td class="k">3</td><td class="k"><svg class="ic" aria-hidden="true" focusable="false" data-skill="murderous-burst"><use href="#i-crit"/></svg>Murderous Burst</td><td>Buff qui <strong>monte en stacks à chaque coup porté</strong> ; à 5 stacks il inflige des dégâts et augmente les dégâts critiques</td><td class="num">28</td></tr>
               <tr><td class="k">4</td><td class="k"><svg class="ic" aria-hidden="true" focusable="false" data-skill="impact-hit"><use href="#i-impact"/></svg>Impact Hit</td><td>Chance d'effet Impact et de double hit — du DPS brut</td><td class="num">28</td></tr>
               <tr><td class="k">5</td><td class="k"><svg class="ic" aria-hidden="true" focusable="false" data-skill="identify-weakness"><use href="#i-eye"/></svg>Identify Weakness</td><td>Critique et chance de <em>perfect</em>. Amplifié x1,5 par <span class="skl" data-skill="lunge-stance"><svg class="ic" aria-hidden="true"><use href="#i-speed"/></svg><span class="n">Lunge Stance</span></span></td><td class="num">19</td></tr>
               <tr><td class="k">6</td><td class="k"><svg class="ic" aria-hidden="true" focusable="false" data-skill="survival-stance"><use href="#i-guard"/></svg>Survival Stance</td><td>Les stats qui vous rendent résistant</td><td class="num">17</td></tr>
@@ -1058,10 +1060,10 @@ html.js .rv.in{opacity:1; transform:none;}
           <div class="sl"><span class="n"><svg class="ic" aria-hidden="true" focusable="false" data-skill="zikels-blessing"><use href="#i-star"/></svg>Prio 3</span><span class="t">Zikel's Blessing</span><span class="s">+50&nbsp;% stagger, +50&nbsp;% multi-hit</span></div>
           <div class="sl"><span class="n"><svg class="ic" aria-hidden="true" focusable="false" data-skill="wave-armor"><use href="#i-wave"/></svg>Prio 4</span><span class="t">Wave Armor</span><span class="s">x1,5 sur deux passifs</span></div>
           <div class="sl off"><span class="n"><svg class="ic" aria-hidden="true" focusable="false" data-skill="lifestealing-blade"><use href="#i-lifesteal"/></svg>Prio 5</span><span class="t">Lifestealing Blade</span><span class="s">gros soin + buff de groupe</span></div>
-          <div class="sl off"><span class="n"><svg class="ic" aria-hidden="true" focusable="false" data-skill="focused-block"><use href="#i-block"/></svg>Prio 6</span><span class="t">Focused Block</span><span class="s">obligatoire si vous tankez</span></div>
+          <div class="sl off"><span class="n"><svg class="ic" aria-hidden="true" focusable="false" data-skill="focused-block"><use href="#i-block"/></svg>Prio 6</span><span class="t">Focused Block</span><span class="s">obligatoire si vous tenez le boss</span></div>
           <div class="sl off"><span class="n"><svg class="ic" aria-hidden="true" focusable="false" data-skill="blade-toss"><use href="#i-throw"/></svg>Prio 7</span><span class="t">Blade Toss</span><span class="s">debuff de groupe, optionnel</span></div>
         </div>
-        <p class="capt">Les trois derniers sont en pointillés parce qu'ils ne rentrent pas dans les quatre emplacements. <span class="skl" data-skill="focused-block"><svg class="ic" aria-hidden="true"><use href="#i-block"/></svg><span class="n">Focused Block</span></span> remonte immédiatement en tête si c'est vous qui tankez.</p>
+        <p class="capt">Les trois derniers sont en pointillés parce qu'ils ne rentrent pas dans les quatre emplacements. <span class="skl" data-skill="focused-block"><svg class="ic" aria-hidden="true"><use href="#i-block"/></svg><span class="n">Focused Block</span></span> remonte immédiatement en tête si c'est vous qui tenez le boss.</p>
 
         <h3>Ce que chacun apporte</h3>
         <div class="tw">
@@ -1204,7 +1206,7 @@ html.js .rv.in{opacity:1; transform:none;}
 
         <div class="note gold">
           <span class="lab"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-chain"/></svg>La boucle, en une phrase</span>
-          <p>Le crit garanti d'Overhead Slam déclenche la réduction de cooldown de Lunge Stance, qui fait revenir Rage Burst plus vite, qui vous redonne Overhead Slam en continu. Chaque pièce dépend de la précédente, et un Gladiator à qui il manque une pièce « a l'air très faible » — les trois sources emploient à peu près ce mot.</p>
+          <p>Le crit garanti d'Overhead Slam déclenche la réduction de cooldown de Lunge Stance, qui fait revenir Rage Burst plus vite, qui vous redonne Overhead Slam en continu. Chaque pièce dépend de la précédente, et un Gladiator à qui il manque une pièce « a l'air très faible » — les trois sources emploient à peu près le même mot.</p>
         </div>
 
         <h3>Ce qui fait revenir Overhead Slam plus vite</h3>
@@ -1267,7 +1269,7 @@ html.js .rv.in{opacity:1; transform:none;}
         <div class="macro">
           <div class="ln"><span class="k">1</span><span class="icbox gold"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-macro"/></svg></span><div><b>Touche de la macro du jeu</b><p>Elle déclenche les buffs qu'on a rangés dans l'onglet Macro.</p></div></div>
           <div class="ln"><span class="k">2</span><span class="icbox"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-cal"/></svg></span><div><b>15 ms de délai</b><p>Le temps que le client enregistre la frappe. Sa valeur à lui, sur sa connexion.</p></div></div>
-          <div class="ln"><span class="k">3</span><span class="icbox gold"><svg class="ic" data-skill="overhead-slam"><use href="#i-sword"/></svg></span><div><b>Touche d'Overhead Slam</span></span></b><p>La frappe qui compte. C'est elle qu'on répète jusqu'à ce que les 7&nbsp;% tombent.</p></div></div>
+          <div class="ln"><span class="k">3</span><span class="icbox gold"><svg class="ic" data-skill="overhead-slam"><use href="#i-sword"/></svg></span><div><b>Touche d'<span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span></b><p>La frappe qui compte. C'est elle qu'on répète jusqu'à ce que les 7&nbsp;% tombent.</p></div></div>
         </div>
         <p>Le réglage qui change tout est le mode de répétition. Par défaut on tient le bouton enfoncé pour que la macro boucle. Lui préfère le mode <strong>bascule</strong>, un appui pour lancer, un appui pour arrêter, et sa raison est aussi bête qu'honnête, « j'ai la flemme de tenir ».</p>
 
@@ -1399,7 +1401,7 @@ html.js .rv.in{opacity:1; transform:none;}
         <h3>L'équipement lui-même</h3>
         <ul>
           <li><strong>Enchantement</strong> jusqu'à <strong>+15</strong>, puis cinq paliers supplémentaires jusqu'à <strong>+5</strong> maximum, avec des matériaux amplifiés.</li>
-          <li><strong>Ne supprimez jamais l'équipement « unique ».</strong> Il sert de matériau pour re-roller les stats d'une pièce. Le re-roll est aléatoire et se répète souvent avant de tomber sur ce qu'on veut.</li>
+          <li><strong>Ne supprimez jamais l'équipement « unique ».</strong> Il sert de matériau pour relancer les stats d'une pièce. Le re-roll est aléatoire et se répète souvent avant de tomber sur ce qu'on veut.</li>
           <li><strong>Les Theos stones</strong> — l'équivalent des god stones du premier AION — se posent sur l'arme <em>et sur le Guard</em>. Le Guard compte comme une seconde arme, et c'est une erreur fréquente de l'oublier. Les autres pièces n'en acceptent pas.</li>
           <li><strong>Les pierres de mana</strong> ajoutent des stats et du combat power, mais le système est aléatoire, sans transfert ni pitié. Le conseil qui revient : prenez un roll correct et passez à autre chose, ne visez jamais le best-in-slot.</li>
         </ul>
@@ -1431,7 +1433,7 @@ html.js .rv.in{opacity:1; transform:none;}
             </tbody>
           </table>
         </div>
-        <p>Mettre deux fois la même compétence sur une carte coûte nettement plus cher que d'en poser une seule et de laisser l'autre au hasard. Au début, prenez l'option économique, vous re-crafterez plus tard.</p>
+        <p>Mettre deux fois la même compétence sur une carte coûte nettement plus cher que d'en poser une seule et de laisser l'autre au hasard. Au début, prenez l'option économique, vous referez la carte plus tard.</p>
 
         <h3>Les points Daevanion</h3>
         <p>Budget séparé des skill points, autour de <strong>160 à 170</strong> offerts par le leveling. Pour les compléter : les donjons régionaux, l'exploration, puis les <strong>donjons scellés et les strongholds du territoire ennemi</strong> — un Elyos va en territoire asmodien, et inversement. On y gagne des points Shugo, qu'on échange contre des cristaux Daevanion.</p>
@@ -1589,7 +1591,7 @@ html.js .rv.in{opacity:1; transform:none;}
       </section>
 
       <footer>
-        <p>Guide de classe uniquement, sur le Gladiator et sa progression sur la version globale. Écrit le 16 septembre 2026, avant l'ouverture des serveurs européens. Une partie des noms et des chiffres bougera au lancement ; je mettrai la page à jour dans les premières semaines.</p>
+        <p>Guide de classe uniquement, sur le Gladiator et sa progression sur la version globale. Dernière mise à jour le 16 septembre 2026, avant l'ouverture des serveurs européens. Une partie des noms et des chiffres bougera au lancement ; je mettrai la page à jour dans les premières semaines.</p>
         <p>Contrairement à mon guide Assassin, je n'ai pas joué cette classe, ce document est une compilation vérifiée, pas un retour d'expérience. Tout ce qui n'est pas confirmé par au moins deux sources est signalé comme tel. Habillage graphique original. Les icônes de compétences sont celles du jeu ; Aion&nbsp;2 et ses visuels sont la propriété de NCSOFT Corporation.</p>
       </footer>
 
