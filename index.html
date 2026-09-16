@@ -315,14 +315,17 @@ td.k .ic{width:15px; height:15px; color:var(--edge); margin-right:5px; vertical-
 .cmp .row{display:grid; grid-template-columns:1fr; border-bottom:1px solid var(--line);}
 .cmp .row:last-child{border-bottom:none;}
 @media (min-width:640px){ .cmp .row{grid-template-columns:152px 1fr 1fr;} }
-.cmp .q{padding:12px 14px; font-weight:700; font-size:.88rem; background:var(--surface-2);}
+.cmp .q{padding:12px 14px; font-weight:700; font-size:.88rem; background:var(--surface-2); min-width:0; overflow-wrap:anywhere;}
+.cmp .q .skl{white-space:normal;}
+.cmp .c{min-width:0;}
+.cmp .c .skl{white-space:normal;}
 .cmp .a, .cmp .b, .cmp .c{padding:12px 14px; font-size:.86rem; color:var(--ink-2);}
 @media (min-width:640px){ .cmp .a{border-left:1px solid var(--line); border-right:1px solid var(--line);} }
 .cmp .who{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.11em; text-transform:uppercase; display:block; margin-bottom:4px;}
 .cmp .a .who{color:var(--aether-ink);}
 .cmp .b .who{color:var(--gold-ink);}
 .cmp3 .row{grid-template-columns:1fr;}
-@media (min-width:830px){ .cmp3 .row{grid-template-columns:170px 1fr 1fr 1fr;} }
+@media (min-width:830px){ .cmp3 .row{grid-template-columns:200px 1fr 1fr 1fr;} }
 @media (min-width:830px){ .cmp3 .c{border-left:1px solid var(--line);} }
 .cmp3 .c .who{color:var(--violet-ink);}
 .cmp .c > b{display:block; color:var(--ink); margin-bottom:3px;}
@@ -691,7 +694,7 @@ html.js .rv.in{opacity:1; transform:none;}
 
         <div class="note ndlr">
           <span class="lab"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-warn"/></svg>La guerre des noms</span>
-          <p>Le même sort s'appelle <em>Sharp Strike</em>, <em><span class="skl" data-skill="keen-strike"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-flash"/></svg><span class="n">Keen Strike</span></span></em> ou <em>Frappe acérée</em> selon le site. J'ai retenu la nomenclature du planner, qui recoupe celle du wiki le plus propre. Si vous croisez <em>Cleaving Blow</em>, <em>Downward Strike</em>, <em>Mutilating Blow</em> ou <em>Path Explosion</em> ailleurs, ce sont respectivement <span class="skl" data-skill="rending-blow"><svg class="ic" aria-hidden="true"><use href="#i-slash"/></svg><span class="n">Rending Blow</span></span>, <span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span>, <span class="skl" data-skill="ruinous-blow"><svg class="ic" aria-hidden="true"><use href="#i-assault"/></svg><span class="n">Ruinous Blow</span></span> et probablement <span class="skl" data-skill="rage-burst"><svg class="ic" aria-hidden="true"><use href="#i-rage"/></svg><span class="n">Rage Burst</span></span>.</p>
+          <p>Le même sort s'appelle <em>Sharp Strike</em>, <span class="skl" data-skill="keen-strike"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-flash"/></svg><span class="n">Keen Strike</span></span> ou <em>Frappe acérée</em> selon le site. J'ai retenu la nomenclature du planner, qui recoupe celle du wiki le plus propre. Si vous croisez <em>Cleaving Blow</em>, <em>Downward Strike</em>, <em>Mutilating Blow</em> ou <em>Path Explosion</em> ailleurs, ce sont respectivement <span class="skl" data-skill="rending-blow"><svg class="ic" aria-hidden="true"><use href="#i-slash"/></svg><span class="n">Rending Blow</span></span>, <span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span>, <span class="skl" data-skill="ruinous-blow"><svg class="ic" aria-hidden="true"><use href="#i-assault"/></svg><span class="n">Ruinous Blow</span></span> et probablement <span class="skl" data-skill="rage-burst"><svg class="ic" aria-hidden="true"><use href="#i-rage"/></svg><span class="n">Rage Burst</span></span>.</p>
         </div>
 
         <h3>Les cinq trous que j'assume</h3>
@@ -1554,7 +1557,7 @@ html.js .rv.in{opacity:1; transform:none;}
             <div class="q"><span class="skl" data-skill="wave-armor"><svg class="ic" aria-hidden="true"><use href="#i-wave"/></svg><span class="n">Wave Armor</span></span> — indispensable ou jamais joué ?</div>
             <div class="c"><span class="who">Planner + relevé</span>Monté au maximum. Niveau moyen <strong>25</strong> chez les top joueurs, troisième stigma de la liste.</div>
             <div class="c"><span class="who">Dossier Taïwan</span>« Je n'ai vu personne l'utiliser. <em>Peut-être que je me trompe.</em> »</div>
-            <div class="c"><span class="who">Ce que je retiens</span>On le joue. Deux sources sur trois le montent, dont la seule qui s'appuie sur un relevé de joueurs classés — et la troisième se corrige elle-même dans la phrase. Le fait qu'il multiplie par 1,5 un de vos cinq passifs et votre vol de vie suffit à justifier sa place. À noter, le relevé décrit le couple amplifié comme <em><span class="skl" data-skill="experienced-counterstrike"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-front"/></svg><span class="n">Experienced Counterstrike</span></span> + <span class="skl" data-skill="blood-absorption"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-lifesteal"/></svg><span class="n">Blood Absorption</span></span></em> là où le planner affiche <em><span class="skl" data-skill="blood-absorption"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-lifesteal"/></svg><span class="n">Blood Absorption</span></span> + <span class="skl" data-skill="murderous-burst"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-crit"/></svg><span class="n">Murderous Burst</span></span></em>. Le passif exact n'est pas tranché, l'intérêt du stigma l'est.</div>
+            <div class="c"><span class="who">Ce que je retiens</span>On le joue. Deux sources sur trois le montent, dont la seule qui s'appuie sur un relevé de joueurs classés — et la troisième se corrige elle-même dans la phrase. Le fait qu'il multiplie par 1,5 un de vos cinq passifs et votre vol de vie suffit à justifier sa place. À noter, le relevé décrit le couple amplifié comme <span class="skl" data-skill="experienced-counterstrike"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-front"/></svg><span class="n">Experienced Counterstrike</span></span> + <span class="skl" data-skill="blood-absorption"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-lifesteal"/></svg><span class="n">Blood Absorption</span></span> là où le planner affiche <span class="skl" data-skill="blood-absorption"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-lifesteal"/></svg><span class="n">Blood Absorption</span></span> + <span class="skl" data-skill="murderous-burst"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-crit"/></svg><span class="n">Murderous Burst</span></span>. Le passif exact n'est pas tranché, l'intérêt du stigma l'est.</div>
           </div>
           <div class="row">
             <div class="q"><span class="skl" data-skill="sword-aura-rampage"><svg class="ic" aria-hidden="true"><use href="#i-whirl"/></svg><span class="n">Sword Aura Rampage</span></span> — quel node ?</div>
