@@ -108,7 +108,7 @@ texte plutôt que cachées :
   retour d'expérience — contrairement au guide Assassin. Le chapitre 2 expose la méthode
   et les quatre niveaux de fiabilité utilisés.
 - **Six désaccords entre sources sont documentés** au chapitre 18, avec ce que dit chaque
-  camp et l'arbitrage retenu. Le nombre de slots de stigma n'est volontairement pas tranché.
+  camp et l'arbitrage retenu, y compris sur le nombre de slots de stigma.
 - **Le chapitre 12 (macro) est incomplet** et le dit : la seule vidéo qui la détaille
   n'a pas pu être transcrite.
 
@@ -119,7 +119,7 @@ texte plutôt que cachées :
 Les points à reprendre en priorité une fois les serveurs ouverts sont listés à la fin de
 l'annexe. Les plus structurants :
 
-1. Le nombre réel de slots de stigma (chapitres 8 et 18).
+1. Confirmer les 4 slots de stigma le jour de l'ouverture (chapitres 8 et 18).
 2. Si un sort au niveau 8, avec un seul node, peut aller chercher sa cinquième option
    (chapitres 4 et 9).
 3. Les noms français officiels du kit, si la version globale les traduit.
