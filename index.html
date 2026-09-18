@@ -521,6 +521,36 @@ html.js .rv.in{opacity:1; transform:none;}
   html{scroll-behavior:auto;}
   html.js .rv{opacity:1; transform:none;}
 }
+
+/* --- relevés du Launch Scale Test, 17-18 septembre --- */
+.bta{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--aether-ink); background:var(--aether-soft); border:1px solid var(--aether);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.bta::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--aether); flex:none;}
+.betabox{
+  border:1px solid var(--aether); border-left:5px solid var(--aether); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.betabox .lab{color:var(--aether-ink); margin-bottom:9px;}
+.betabox h2{font-family:"Cinzel",serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.betabox > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.betabox > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.betabox ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.betabox li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--aether);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.betabox li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.betabox li.wip{border-top-color:var(--gold);}
+.betabox li.wip b{color:var(--gold-ink);}
+@media (min-width:900px){ .betabox ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .betabox{padding:18px 16px;} .bta{margin-left:5px;} }
+.slots dd{min-width:0;}
+.slots dd .skl{white-space:normal;}
 </style>
 </head>
 <body>
@@ -617,7 +647,7 @@ html.js .rv.in{opacity:1; transform:none;}
     </div>
 
     <p class="dek">Le Gladiator, je ne l'ai pas joué. Sur l'Assassin je parlais de mon perso. Ici je parle de ce que j'ai vérifié. J'ai pris un planner chiffré, deux dossiers de joueurs endgame taïwanais, deux vidéos de lancement et une vidéo coréenne dédiée à la macro, je les ai mis côte à côte, et quand ils ne disaient pas la même chose j'ai tranché en expliquant pourquoi. <strong>Tout ce que vous lisez ici vient d'au moins deux sources qui se recoupent.</strong> Quand ce n'est pas le cas, c'est écrit.</p>
-    <p class="byline">Un planner complet lu au node près, 5 guides vidéo dépouillés, 3 dossiers web croisés &middot; dernière mise à jour le 16 septembre 2026</p>
+    <p class="byline">Un planner complet lu au node près, 5 guides vidéo dépouillés, 3 dossiers web croisés, et deux relevés faits en jeu pendant la bêta &middot; dernière mise à jour le 18 septembre 2026</p>
 
     <dl class="strip">
       <div><dt>Rôle</dt><dd>Melee bruiser<span class="sub">DPS de front, off-tank</span></dd></div>
@@ -629,6 +659,22 @@ html.js .rv.in{opacity:1; transform:none;}
 </header>
 
 <div class="shell">
+
+  <section class="betabox" id="sbeta">
+    <span class="lab a"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-flash"/></svg>Mise &agrave; jour du 18 septembre</span>
+    <h2>Ce que la b&ecirc;ta a tranch&eacute;</h2>
+    <p>J'ai jou&eacute; la premi&egrave;re journ&eacute;e du Launch Scale Test, le 17 au soir. Six points que ce guide laissait ouverts sont r&eacute;gl&eacute;s, un reste en suspens. Tout est repris au bon endroit dans les chapitres, rep&eacute;r&eacute; par la pastille <span class="bta">vu en b&ecirc;ta</span></p>
+    <ul>
+      <li><b>Quatre emplacements de stigma</b>C'&eacute;tait l'hypoth&egrave;se de travail de tout le guide, elle tient. La limite est pr&eacute;sent&eacute;e comme une contrainte de Saison&nbsp;1, d'autres emplacements devraient revenir en Saison&nbsp;2 avec le Pugiliste.</li>
+      <li><b>Les stigmas s'ouvrent au niveau 22</b>Par la qu&ecirc;te &laquo;&nbsp;&Agrave; l'&eacute;coute des voix&nbsp;&raquo;. Avant &ccedil;a le panneau est enti&egrave;rement cadenass&eacute;, inutile de le chercher plus t&ocirc;t.</li>
+      <li><b>Cinq options de node, verrouill&eacute;es &agrave; 8, 8, 8, 12 et 16</b>Le client affiche le palier sur chaque ligne. Trois options sont d&eacute;j&agrave; l&agrave; au niveau 8, les grosses sont au 12 et au 16.</li>
+      <li><b>Trois emplacements de sp&eacute;cialisation</b>La barre &laquo;&nbsp;Sp&eacute;cialis&eacute;&nbsp;&raquo; en montre trois. On choisit donc trois options sur cinq, pas plus.</li>
+      <li><b>Les nodes de stigma tombent aux niveaux 5, 10, 15 et 20</b>Automatiques, rien &agrave; choisir. Le guide le disait d&eacute;j&agrave;, il manquait les paliers exacts.</li>
+      <li><b>L'onglet macro existe, avec trois presets</b>Le panneau de comp&eacute;tences a bien un s&eacute;lecteur &laquo;&nbsp;Comp&eacute;tence / Macro de combat&nbsp;&raquo; et trois pages de barres. Le chapitre 12 tient debout.</li>
+      <li class="wip"><b>Ce qui reste ouvert</b>&Agrave; quel niveau s'ouvrent le deuxi&egrave;me et le troisi&egrave;me emplacement de sp&eacute;cialisation. Le test &eacute;tait cap&eacute; au niveau 37, aucun sort ne montait assez haut pour le voir.</li>
+    </ul>
+    <p>Relev&eacute; sur un Assassin, la seule classe que j'ai mont&eacute;e pendant les six heures de cette premi&egrave;re journ&eacute;e. Le panneau de comp&eacute;tences est le m&ecirc;me pour toutes les classes, mais les niveaux de sorts cit&eacute;s ailleurs dans ce guide, eux, n'ont pas &eacute;t&eacute; v&eacute;rifi&eacute;s en jeu.</p>
+  </section>
 
   <details class="mobile-toc">
     <summary>Sommaire — 18 chapitres + une annexe</summary>
@@ -705,7 +751,7 @@ html.js .rv.in{opacity:1; transform:none;}
               <tr><td class="k"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-macro"/></svg>Le réglage fin de la macro</td><td>Le principe est documenté (chapitre 12), mais les valeurs de délai dépendent de la latence de chacun. Personne ne publie de table.</td></tr>
               <tr><td class="k"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-rage"/></svg>Le coût de montée des stigmas</td><td>On sait qu'il grimpe vite au-delà du 20, pas de combien. Aucune source ne donne de table de coûts.</td></tr>
               <tr><td class="k"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-scale"/></svg>Les bonus de niveau externes</td><td>Le planner affiche des badges qui complètent le niveau d'un sort au-delà des skill points. Je n'ai pas pu confirmer d'où ils viennent, donc je ne l'écris nulle part.</td></tr>
-              <tr><td class="k"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-book"/></svg>Les noms français</td><td>Le jeu n'est pas sorti chez nous. Tout est laissé en anglais, comme sur le guide Assassin.</td></tr>
+              <tr><td class="k"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-book"/></svg>Les noms français</td><td>Ils existent, la bêta les affiche, &laquo;&nbsp;Tempête déferlante&nbsp;&raquo; ou &laquo;&nbsp;Contrat de célérité&nbsp;&raquo;.<span class="bta">vu en bêta</span> Je n'en ai relevé que deux, et sur l'Assassin. Je garde donc l'anglais partout, c'est ce qui circule dans les vidéos et sur Discord, et c'est ce qui vous permet de suivre les guides des autres régions.</td></tr>
               <tr><td class="k"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-cal"/></svg>Les donjons de leveling</td><td>La seule source qui détaille le parcours les prononce sans les afficher, et je n'ai pas pu recouper l'orthographe ailleurs. Je préfère ne pas inventer des noms.</td></tr>
             </tbody>
           </table>
@@ -765,18 +811,24 @@ html.js .rv.in{opacity:1; transform:none;}
         <div class="gates">
           <div class="gate"><span class="lv">8</span><span class="lb">1 node</span><p>Le premier palier. Trois skill points suffisent sur les sorts pas chers. En dessous, un sort ne sert à rien.</p></div>
           <div class="gate"><span class="lv">12</span><span class="lb">2 nodes</span><p>Le palier de la plupart des sorts de soutien. Beaucoup s'arrêtent là définitivement, et c'est le bon choix.</p></div>
-          <div class="gate"><span class="lv">20</span><span class="lb">3 nodes</span><p>Le dernier palier. Réservé aux trois sorts principaux, et à un quatrième si vous farmez beaucoup de mobs.</p></div>
+          <div class="gate"><span class="lv">20</span><span class="lb">3 nodes</span><p>Le dernier palier, et le seul chiffre de cette rangée que la bêta n'a pas pu confirmer. Réservé aux trois sorts principaux, et à un quatrième si vous farmez beaucoup de mobs.</p></div>
         </div>
 
         <p>Deux trucs à savoir, parce qu'ils changent vos choix.</p>
         <ul>
           <li><strong>Le choix est libre parmi les cinq.</strong> Ce n'est pas un arbre de talents, vous piochez ce que vous voulez. Sur <span class="skl" data-skill="ankle-slice"><svg class="ic" aria-hidden="true"><use href="#i-ankle"/></svg><span class="n">Ankle Slice</span></span> le build de référence prend le 3<sup>e</sup> et le 5<sup>e</sup>. Sur <span class="skl" data-skill="rush-strike"><svg class="ic" aria-hidden="true"><use href="#i-swift"/></svg><span class="n">Rush Strike</span></span> il prend le 2<sup>e</sup> et le 4<sup>e</sup>.</li>
-          <li><strong>Certaines options sont verrouillées par niveau.</strong> Elles portent un marquage <strong>Nv12</strong> ou <strong>Nv16</strong>, et même avec un slot libre l'option n'apparaît pas tant que le sort n'a pas ce niveau. Plusieurs des meilleures options du kit sont en Nv16.</li>
+          <li><strong>Chaque option porte son palier.</strong> Les cinq sont verrouillées à <strong>8, 8, 8, 12 et 16</strong>.<span class="bta">vu en bêta</span> Même avec un emplacement libre, une option n'apparaît pas tant que le sort n'a pas son niveau. Plusieurs des meilleures options du kit sont au 16.</li>
         </ul>
 
         <div class="note">
+          <span class="lab a"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-flash"/></svg>Ce que la b&ecirc;ta a montr&eacute;, et ce qu'elle n'a pas montr&eacute;</span>
+          <p>Deux choses sont v&eacute;rifi&eacute;es. Les cinq options portent toujours les m&ecirc;mes paliers, <strong>8, 8, 8, 12 et 16</strong>, donc trois d'entre elles sont d&eacute;j&agrave; disponibles quand le sort passe au 8. Et la barre &laquo;&nbsp;Sp&eacute;cialis&eacute;&nbsp;&raquo; affiche <strong>trois emplacements</strong>, ce qui fixe le maximum &agrave; trois options sur cinq.</p>
+          <p>Ce qu'elle ne tranche pas, c'est &agrave; quel niveau s'ouvrent le deuxi&egrave;me et le troisi&egrave;me. J'ai &eacute;crit 12 et 20 juste au-dessus. Les paliers d'options plaident plut&ocirc;t pour 12 et 16, et une source parle m&ecirc;me d'un quatri&egrave;me emplacement au niveau 20. Le test &eacute;tait cap&eacute; au niveau 37 de personnage, aucun sort ne montait assez haut pour arbitrer. C'est la premi&egrave;re chose que je v&eacute;rifie le 5 octobre.</p>
+        </div>
+
+        <div class="note">
           <span class="lab a"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-rage"/></svg>Les stigmas, c'est différent</span>
-          <p>Leurs quatre nodes sont <strong>automatiques</strong>. Rien à choisir, ils se débloquent tout seuls en montant le stigma. Les deux sources qui abordent le sujet disent la même chose. Un stigma au niveau 20 affiche un coût de <strong>75 unités</strong> d'une monnaie dont je n'ai pas pu confirmer le nom, et il arrive avec ses quatre nodes.</p>
+          <p>Leurs quatre nodes sont <strong>automatiques</strong>, et ils tombent aux niveaux de stigma <strong>5, 10, 15 et 20</strong>.<span class="bta">vu en bêta</span> Rien à choisir, ils se débloquent tout seuls en montant le stigma. Un stigma au niveau 20 affiche un coût de <strong>75 unités</strong> d'une monnaie dont je n'ai pas pu confirmer le nom, et il arrive avec ses quatre nodes.</p>
         </div>
 
         <h3>Comment un sort dépasse le niveau 20</h3>
@@ -1063,7 +1115,7 @@ html.js .rv.in{opacity:1; transform:none;}
           <span class="lab"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-warn"/></svg>Quatre, et pas six</span>
           <p>Les communications NC sur la Saison&nbsp;1 annoncent <strong>quatre emplacements</strong> pour la globale, et ce chiffre colle au système de base coréen, où l'on choisissait quatre stigmas parmi douze. C'est déjà là-dessus que mon guide Assassin est construit.</p>
           <p>Le dossier taïwanais le confirme sans le vouloir. Il écrit qu'on peut en équiper « <strong>jusqu'à six</strong> maintenant. C'était quatre, puis cinq, maintenant six. » Autrement dit, quatre est bien le chiffre de lancement, et il monte au fil des patchs. La globale part d'une version plus ancienne, donc elle démarre en bas de l'échelle.</p>
-          <p>Une réserve quand même. Le relevé des top joueurs, pourtant établi pour la globale en août, dit « on ne sait pas encore exactement combien on pourra en équiper, attendez-vous à entre quatre et six ». Soit son auteur est passé à côté de l'annonce, soit celle-ci est moins ferme qu'elle en a l'air. J'écris pour quatre, et si vous en avez cinq ou six le jour de l'ouverture, vous descendez simplement plus bas dans la liste.</p>
+          <p>C'est réglé depuis la bêta.<span class="bta">vu en bêta</span> Quatre emplacements, et la limite est présentée comme une contrainte de Saison 1. La Saison 2 devrait en rendre, en même temps qu'elle ajoutera le Pugiliste. Le relevé des top joueurs, qui tablait sur « entre quatre et six », visait juste mais trop large. Vous pouvez lire ce chapitre sans arrière-pensée, les sept stigmas jouables se disputent bien quatre places.</p>
         </div>
 
         <h3>L'ordre dans lequel je les prends</h3>
@@ -1272,7 +1324,7 @@ html.js .rv.in{opacity:1; transform:none;}
         </div>
 
         <h3>Couche 1 &mdash; la macro du jeu</h3>
-        <p>Le panneau de compétences a un onglet <strong>Macro</strong>. On y met les sorts qu'on veut voir partir ensemble sans y penser. Sa macro à lui contient deux lignes qu'il nomme, celle de <span class="skl" data-skill="zikels-blessing"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><span class="n">Zikel's Blessing</span></span> et celle de <span class="skl" data-skill="sword-aura-rampage"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-whirl"/></svg><span class="n">Sword Aura Rampage</span></span>.</p>
+        <p>Le panneau de compétences a bien un onglet <strong>Macro de combat</strong>, avec trois pages pour ranger vos configurations.<span class="bta">vu en bêta</span> On y met les sorts qu'on veut voir partir ensemble sans y penser. Sa macro à lui contient deux lignes qu'il nomme, celle de <span class="skl" data-skill="zikels-blessing"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><span class="n">Zikel's Blessing</span></span> et celle de <span class="skl" data-skill="sword-aura-rampage"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-whirl"/></svg><span class="n">Sword Aura Rampage</span></span>.</p>
         <p>Ça recoupe ce que dit le planner, qui justifie de laisser <span class="skl" data-skill="sword-aura-rampage"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-whirl"/></svg><span class="n">Sword Aura Rampage</span></span> au niveau 8 par une phrase courte, « on préfère conserver notre macro, qui inflige davantage de dégâts ». La macro fait partie du build, elle n'est pas un confort ajouté après coup.</p>
 
         <h3>Couche 2 &mdash; le réglage à activer</h3>
@@ -1581,7 +1633,7 @@ html.js .rv.in{opacity:1; transform:none;}
             <div class="q">Combien de slots de stigma ?</div>
             <div class="c"><span class="who">Dossier Taïwan</span><strong>Six</strong> aujourd'hui. « C'était quatre, puis cinq, maintenant six. »</div>
             <div class="c"><span class="who">Relevé des top joueurs</span>« On ne sait pas encore pour la sortie mondiale, mais attendez-vous à <strong>entre quatre et six</strong>. »</div>
-            <div class="c"><span class="who">Ce que je retiens</span><strong>Quatre.</strong> Les communications NC sur la Saison&nbsp;1 le donnent, le système de base coréen en avait quatre, et la phrase du dossier taïwanais le confirme en creux, puisqu'elle raconte une progression de quatre vers six au fil des patchs. Mon guide Assassin est déjà construit là-dessus.</div>
+            <div class="c"><span class="who">Ce que je retiens</span><strong>Quatre.</strong><span class="bta">tranché en bêta</span> Les communications NC sur la Saison&nbsp;1 le donnent, le système de base coréen en avait quatre, et la phrase du dossier taïwanais le confirme en creux, puisqu'elle raconte une progression de quatre vers six au fil des patchs. Mon guide Assassin est déjà construit là-dessus.</div>
           </div>
         </div>
 
@@ -1615,17 +1667,16 @@ html.js .rv.in{opacity:1; transform:none;}
 
         <h3>Ce qu'il reste à vérifier en jeu</h3>
         <ul>
-          <li>Le nombre de slots de stigma de la version globale.</li>
-          <li>Si un sort au niveau 8, avec un seul node, peut aller chercher la cinquième option.</li>
+          <li>À quel niveau s'ouvrent le deuxième et le troisième emplacement de spécialisation. La bêta a confirmé qu'il y en a trois, pas à quel palier ils arrivent.</li>
           <li>D'où viennent les bonus de niveau qui complètent les skill points sur le planner.</li>
-          <li>Les noms français officiels du kit, et le libellé exact du Smite.</li>
+          <li>Le reste des noms français du kit, et le libellé exact du Smite.</li>
           <li>Une macro relevée chez un joueur, plutôt que déduite de la rotation.</li>
           <li>Si le Smite du slot 6 du Genius Insight vaut celui des slots 3 et 9.</li>
         </ul>
       </section>
 
       <footer>
-        <p>Guide de classe uniquement, sur le Gladiator et sa progression sur la version globale. Dernière mise à jour le 16 septembre 2026, avant l'ouverture des serveurs européens. Une partie des noms et des chiffres bougera au lancement. Je mettrai la page à jour dans les premières semaines.</p>
+        <p>Guide de classe uniquement, sur le Gladiator et sa progression sur la version globale. Dernière mise à jour le 18 septembre 2026, après le Launch Scale Test et avant l'ouverture des serveurs européens. Une partie des noms et des chiffres bougera au lancement. Je mettrai la page à jour dans les premières semaines.</p>
         <p>Contrairement à mon guide Assassin, je n'ai pas joué cette classe, ce document est un dossier recoupé, pas un retour d'expérience. Tout ce qui n'est pas confirmé par au moins deux sources est signalé comme tel. Habillage graphique original. Les icônes de compétences sont celles du jeu. Aion&nbsp;2 et ses visuels sont la propriété de NCSOFT Corporation.</p>
       </footer>
 
