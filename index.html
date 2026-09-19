@@ -551,6 +551,82 @@ html.js .rv.in{opacity:1; transform:none;}
 @media (max-width:620px){ .betabox{padding:18px 16px;} .bta{margin-left:5px;} }
 .slots dd{min-width:0;}
 .slots dd .skl{white-space:normal;}
+.lab .skl,h3 .skl,h4 .skl{white-space:normal;}
+.lab,h3,h4{min-width:0;}
+
+/* --- relevés du jour 1 du test, source unique --- */
+.j1{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px; text-decoration:none;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--gold-ink); background:var(--gold-soft); border:1px solid var(--gold);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.j1::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--gold); flex:none;}
+.j1:hover{filter:brightness(1.12);}
+.j1box{
+  border:1px solid var(--gold); border-left:5px solid var(--gold); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.j1box .lab{color:var(--gold-ink); margin-bottom:9px;}
+.j1box h2{font-family:"Cinzel",Georgia,serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.j1box > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.j1box > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.j1box ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.j1box li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--gold);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.j1box li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.j1box li.att{border-top-color:var(--blood, #A02138);}
+@media (min-width:900px){ .j1box ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .j1box{padding:18px 16px;} .j1{margin-left:5px;} }
+
+/* --- bilan du test de lancement, deux niveaux de fiabilite --- */
+.j1box h3{
+  font-family:"Cinzel",Georgia,serif; font-size:1.04rem; line-height:1.25;
+  margin:26px 0 11px; color:var(--ink);
+}
+.j1box h3:first-of-type{margin-top:2px;}
+.j1box h3 .cnt{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.62em; font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; margin-left:9px; vertical-align:2px;
+}
+.j1box h3.deux .cnt{color:var(--aether);}
+.j1box h3.une .cnt{color:var(--gold-ink);}
+.j1box li.ok{border-top-color:var(--aether);}
+/* --- releve d'infobulles du client --- */
+.tipbox{
+  border:1px solid var(--aether); border-left:5px solid var(--aether); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.tipbox .lab{color:var(--aether); margin-bottom:9px;}
+.tipbox h2{font-family:"Cinzel",Georgia,serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.tipbox > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.tipbox > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.tipbox ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.tipbox li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--aether);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.tipbox li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.tipbox li.corr{border-top-color:var(--blood, #A02138);}
+.tipbox code{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.86em;
+  background:var(--gold-soft); border:1px solid var(--line); border-radius:3px; padding:0 4px;
+}
+@media (min-width:900px){ .tipbox ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .tipbox{padding:18px 16px;} }
+
+.tip{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px; text-decoration:none;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--aether); background:var(--surface-2); border:1px solid var(--aether);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.tip::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--aether); flex:none;}
+.tip:hover{filter:brightness(1.12);}
 </style>
 </head>
 <body>
@@ -647,7 +723,7 @@ html.js .rv.in{opacity:1; transform:none;}
     </div>
 
     <p class="dek">Le Gladiator, je ne l'ai pas joué. Sur l'Assassin je parlais de mon perso. Ici je parle de ce que j'ai vérifié. J'ai pris un planner chiffré, deux dossiers de joueurs endgame taïwanais, deux vidéos de lancement et une vidéo coréenne dédiée à la macro, je les ai mis côte à côte, et quand ils ne disaient pas la même chose j'ai tranché en expliquant pourquoi. <strong>Tout ce que vous lisez ici vient d'au moins deux sources qui se recoupent.</strong> Quand ce n'est pas le cas, c'est écrit.</p>
-    <p class="byline">Un planner complet lu au node près, 5 guides vidéo dépouillés, 3 dossiers web croisés, et deux relevés faits en jeu pendant la bêta &middot; dernière mise à jour le 18 septembre 2026</p>
+    <p class="byline">Un planner complet lu au node près, 5 guides vidéo dépouillés, 3 dossiers web croisés, et deux relevés faits en jeu pendant la bêta &middot; dernière mise à jour le 19 septembre 2026</p>
 
     <dl class="strip">
       <div><dt>Rôle</dt><dd>Melee bruiser<span class="sub">DPS de front, off-tank</span></dd></div>
@@ -674,6 +750,86 @@ html.js .rv.in{opacity:1; transform:none;}
       <li class="wip"><b>Ce qui reste ouvert</b>&Agrave; quel niveau s'ouvrent le deuxi&egrave;me et le troisi&egrave;me emplacement de sp&eacute;cialisation. Le test &eacute;tait cap&eacute; au niveau 37, aucun sort ne montait assez haut pour le voir.</li>
     </ul>
     <p>Relev&eacute; sur un Assassin, la seule classe que j'ai mont&eacute;e pendant les six heures de cette premi&egrave;re journ&eacute;e. Le panneau de comp&eacute;tences est le m&ecirc;me pour toutes les classes, mais les niveaux de sorts cit&eacute;s ailleurs dans ce guide, eux, n'ont pas &eacute;t&eacute; v&eacute;rifi&eacute;s en jeu.</p>
+  </section>
+
+
+  <section class="tipbox" id="tips">
+    <span class="lab">Relev&eacute; dans le client &middot; quatre infobulles</span>
+    <h2>Ce que les infobulles disent, mot pour mot</h2>
+    <p>J'ai r&eacute;cup&eacute;r&eacute; quatre infobulles du client global. C'est la mati&egrave;re la plus s&ucirc;re
+    de cette page, parce qu'il n'y a rien &agrave; interpr&eacute;ter. Elles valident deux paris du guide et en cassent
+    un troisi&egrave;me.</p>
+    <ul>
+      <li><b><span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span> &middot; les 7&nbsp;% sont &eacute;crits noir sur blanc</b>
+      2430 &agrave; 2510 de d&eacute;g&acirc;ts sur une cible &agrave; terre &agrave; moins de 4&nbsp;m, plus de l'aggro.
+      Deux lignes valident tout le chapitre 10, <code>Lands as a Critical Hit</code> et
+      <code>Has a 7&nbsp;% chance to trigger on attacking a target with Incapacitated Immunity</code>. Le sort crit
+      toujours, et les 7&nbsp;% sont bien la m&eacute;canique de la classe.</li>
+
+      <li><b>Ses cinq options, dans l'ordre</b>
+      0,7&nbsp;% de PV absorb&eacute;s, passage en sort de zone, cha&icirc;ne [Upward Strike], coup critique au toucher,
+      et au dernier palier la suppression du cooldown. Deux emplacements sur trois sont ouverts sur la capture, ce qui
+      confirme les trois emplacements de sp&eacute;cialit&eacute; du chapitre 4.</li>
+
+      <li><b><span class="skl" data-skill="ruinous-blow"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-slash"/></svg><span class="n">Ruinous Blow</span></span> &middot; la fiche compl&egrave;te</b>
+      Ru&eacute;e de 7,5&nbsp;m, 8663 &agrave; 8897 sur quatre cibles au maximum, zone de 5 sur 9&nbsp;m, 25 de stagger,
+      250 de MP, instantan&eacute;, 45&nbsp;s de cooldown, &eacute;p&eacute;e &agrave; deux mains. Il pose Prepare for
+      Battle pendant 20&nbsp;s, soit +20&nbsp;% de damage boost PvE, +10&nbsp;% en PvP, +100 de crit et +15&nbsp;% de
+      chance d'effet d'&eacute;tat.</li>
+
+      <li class="corr"><b>Correction &mdash; il n'y a pas de node multi-hit sur Ruinous Blow</b>
+      Ses cinq options sont +20&nbsp;% de vitesse de skill, +12,5&nbsp;m de port&eacute;e, +30&nbsp;% de crit sur le sort,
+      des d&eacute;g&acirc;ts suppl&eacute;mentaires au toucher, et &laquo;&nbsp;ignore le block et l'esquive&nbsp;&raquo;
+      au dernier palier. Ce que le relev&eacute; des top joueurs d&eacute;crivait comme du multi-hit, c'est cette
+      derni&egrave;re option. Mon arbitrage du chapitre 18 change donc, la port&eacute;e co&ucirc;te 8 et se prend
+      t&ocirc;t, l'option qui ignore le block demande 16 et attendra le milieu de saison.</li>
+
+      <li><b><span class="skl" data-skill="defiance"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-evade"/></svg><span class="n">Defiance</span></span> &middot; ce que Tenacity veut dire</b>
+      Il purge Stun, Knockdown, Airborne, Grab, Frost et Fear, puis pose Tenacity 5&nbsp;s. L'infobulle donne la
+      d&eacute;finition, Tenacity &eacute;gale immunit&eacute; aux effets d'&eacute;tat. Sans cible, 1 minute de
+      cooldown.</li>
+
+      <li class="corr"><b>Et votre CDR ne le touche pas</b>
+      <code>Unaffected by cooldown reduction effects</code>. Inutile d'esp&eacute;rer le sortir plus souvent en empilant
+      de la r&eacute;duction de cooldown, c'est une minute pleine, toujours. Ses options ajoutent la cha&icirc;ne
+      [Wrath Burst], rendent 1000 de stamina, rendent 20&nbsp;% des PV, allongent Tenacity de 2&nbsp;s, et donnent
+      +50&nbsp;% de tol&eacute;rance aux d&eacute;g&acirc;ts PvE.</li>
+
+      <li><b>Le verrouillage 8 / 8 / 8 / 12 / 16 est confirm&eacute;</b>
+      Les deux sorts affichent exactement la m&ecirc;me grille, trois options &agrave; 8, une &agrave; 12, une &agrave;
+      16. C'est ce que dit le chapitre 4, et c'est ce qui rend le niveau 16 si cher &agrave; atteindre sur plusieurs
+      sorts &agrave; la fois.</li>
+    </ul>
+    <p>Les infobulles sont en anglais, le client fran&ccedil;ais traduira une partie des libell&eacute;s. Et les
+    valeurs chiffr&eacute;es d&eacute;pendent du niveau du personnage comme de celui du sort, donc ne les prenez pas
+    pour des constantes. Les m&eacute;caniques, elles, ne bougent pas.</p>
+  </section>
+
+  <section class="j1box" id="j1">
+    <span class="lab">19 septembre &middot; bilan du Launch Scale Test</span>
+    <h2>Ce que le test de lancement a montr&eacute;</h2>
+    <p>Le Launch Scale Test est termin&eacute;, et deux cr&eacute;ateurs ont publi&eacute; depuis. Le premier a racont&eacute; sa journ&eacute;e d'ouverture. Le second est mont&eacute; jusqu'au niveau 30 et a compar&eacute; menu par menu avec la version ta&iuml;wanaise. L&agrave; o&ugrave; les deux se rejoignent, je le tiens pour acquis. L&agrave; o&ugrave; un seul le dit, &ccedil;a reste ici en attendant. Dans les deux cas c'est une build de test, pas la version qui ouvrira le 5 octobre.</p>
+    <h3 class="deux">Ce que les deux confirment<span class="cnt">solide</span></h3>
+    <ul>
+      <li class="ok"><b>L'&eacute;quipement fabriqu&eacute; perd son bonus PvE</b>Le modificateur en pourcentage saute sur les armes, les armures et les bijoux. En &eacute;change les stats brutes montent fort, une &eacute;p&eacute;e Ebony passe de 485 &agrave; 606 d'attaque l&agrave; o&ugrave; Ta&iuml;wan affiche 372 &agrave; 465.</li>
+      <li class="ok"><b>Les bijoux changent de r&ocirc;le</b>Tous gagnent might et precision, le collier prend du combat speed, les boucles du movement speed. Ce sont les emplacements qui bougent le plus.</li>
+      <li class="ok"><b>Le Genus Insight est refait de fond en comble</b>Le smite tombe de 4,8&nbsp;% par genus &agrave; 3&nbsp;%, et seulement sur le genus sp&eacute;cial. Les lignes d&eacute;fensives ne portent plus que du d&eacute;fensif. Accuracy, crit, boss attack, block et evasion deviennent rares, donc les caps d'accuracy seront plus durs &agrave; atteindre. Arrivent en &eacute;change status effect resist, status effect chance et des PV en pourcentage.</li>
+      <li class="ok"><b>Les familiers plafonnent au niveau 3</b>Contre 5 ailleurs, et ce n'est pas une mont&eacute;e raccourcie qui garde le m&ecirc;me total. C'est un plafond pos&eacute; sur les stats, avec des lignes chang&eacute;es au passage. Le Superior Wind Spirit donne stamina, crit res et precision l&agrave; o&ugrave; la Cor&eacute;e donne MP, precision, willpower, crit res et nature damage.</li>
+      <li class="ok"><b>Le Monolithe ne donne plus de points de comp&eacute;tence</b>Les deux le constatent, sans s'accorder sur la destination. L'un les voit redistribu&eacute;s en gain par niveau, l'autre les voit passer dans les donjons scell&eacute;s. Dans les deux cas la route change.</li>
+      <li class="ok"><b>Les &eacute;clats de stigma s'ach&egrave;tent chez le Shugo</b>35 &eacute;clats, sans palier d&eacute;gressif, &agrave; l'emplacement o&ugrave; la Cor&eacute;e met des points de comp&eacute;tence. On les retrouve dans la boutique de l'Ab&icirc;me et celle du mode cauchemar. L'&eacute;clat instable, lui, a disparu de partout.</li>
+      <li class="ok"><b>Tableaux et ailes tombent directement</b>Plus de fragments &agrave; assembler ni de duvets &agrave; empiler. Chapitres 15 et 17.</li>
+    </ul>
+    <h3 class="une">Ce qu'une seule source donne<span class="cnt">&agrave; confirmer</span></h3>
+    <ul>
+      <li class="att"><b>Les titres perdent leur smite</b>Plus aucun titre n'en donne. Avec le Genus qui tombe &agrave; 3&nbsp;% sur le seul genus sp&eacute;cial, ce sont mes deux sources principales de smite qui maigrissent en m&ecirc;me temps. Le conseil du chapitre 16 de verrouiller le Smite avant tout le reste tient toujours, mais il co&ucirc;tera plus cher. Chapitre 16.</li>
+      <li class="att"><b>Le tableau Divin dispara&icirc;t, le Daevanion est coup&eacute; de moiti&eacute;</b>Le board Divin n'est plus l&agrave;. Sur le Daevanion, combat speed 1,5&nbsp;% au lieu de 2,5, r&eacute;duction de cooldown pareil, damage boost 2,5 au lieu de 5, attaque 3 au lieu de 5, crit 5 au lieu de 10. Chapitre 17.</li>
+      <li><b>Un guard fabricable pour deux tickets de piti&eacute;</b>Et tous les donjons qui n'avaient pas de tickets en ont maintenant. Pour un semi-tank qui traversait la saison avec un guard pourri en Cor&eacute;e, c'est la meilleure nouvelle de la liste. Chapitre 15.</li>
+      <li><b>Les cubes cach&eacute;s donnent 1000 cristaux d'&acirc;me &agrave; tous les coups</b>Contre 100 ailleurs, et les quotidiens ont &eacute;t&eacute; r&eacute;duits &agrave; celui des pierres d'am&eacute;lioration. Les cubes deviennent votre source de Genus. Chapitre 17.</li>
+      <li><b>Les plafonds d'am&eacute;lioration baissent</b>Le vert s'arr&ecirc;te &agrave; +5 au lieu de 10, le bleu &agrave; +10 au lieu de 15. Chapitre 15.</li>
+      <li><b>Les liens d'&acirc;me sont rebattus</b>L'&eacute;quipement fabriqu&eacute; garde ses cinq liens, mais les valeurs baissent nettement, un damage boost de torse passe de 9,5 &agrave; 5,5&nbsp;% au m&ecirc;me iLevel. R&eacute;g&eacute;n&eacute;ration et endurance sont s&eacute;par&eacute;es sur des pi&egrave;ces diff&eacute;rentes, le smite arrive sur les spalli&egrave;res, et les tol&eacute;rances passent sur le torse et la t&ecirc;te. Chapitre 15.</li>
+      <li><b>M&eacute;dailles d'argent seulement</b>Donc de l'&eacute;quipement Centurion en saison 1, et rien au-dessus. Plafond d'AP &agrave; 500&nbsp;000. Chapitre 14.</li>
+    </ul>
+    <p>Deux sources valent mieux qu'une, mais le serveur n'a ouvert que quelques heures, six jours avant le lancement. Les deux cr&eacute;ateurs pr&eacute;cisent eux-m&ecirc;mes qu'ils ignorent ce qui tiendra. Je remonterai ce qui bouge.</p>
   </section>
 
   <details class="mobile-toc">
@@ -822,7 +978,7 @@ html.js .rv.in{opacity:1; transform:none;}
 
         <div class="note">
           <span class="lab a"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-flash"/></svg>Ce que la b&ecirc;ta a montr&eacute;, et ce qu'elle n'a pas montr&eacute;</span>
-          <p>Deux choses sont v&eacute;rifi&eacute;es. Les cinq options portent toujours les m&ecirc;mes paliers, <strong>8, 8, 8, 12 et 16</strong>, donc trois d'entre elles sont d&eacute;j&agrave; disponibles quand le sort passe au 8. Et la barre &laquo;&nbsp;Sp&eacute;cialis&eacute;&nbsp;&raquo; affiche <strong>trois emplacements</strong>, ce qui fixe le maximum &agrave; trois options sur cinq.</p>
+          <p>Deux choses sont v&eacute;rifi&eacute;es. Les cinq options portent toujours les m&ecirc;mes paliers, <strong>8, 8, 8, 12 et 16</strong><a class="tip" href="#tips">infobulle</a>, donc trois d'entre elles sont d&eacute;j&agrave; disponibles quand le sort passe au 8. Et la barre &laquo;&nbsp;Sp&eacute;cialis&eacute;&nbsp;&raquo; affiche <strong>trois emplacements</strong>, ce qui fixe le maximum &agrave; trois options sur cinq.</p>
           <p>Ce qu'elle ne tranche pas, c'est &agrave; quel niveau s'ouvrent le deuxi&egrave;me et le troisi&egrave;me. J'ai &eacute;crit 12 et 20 juste au-dessus. Les paliers d'options plaident plut&ocirc;t pour 12 et 16, et une source parle m&ecirc;me d'un quatri&egrave;me emplacement au niveau 20. Le test &eacute;tait cap&eacute; au niveau 37 de personnage, aucun sort ne montait assez haut pour arbitrer. C'est la premi&egrave;re chose que je v&eacute;rifie le 5 octobre.</p>
         </div>
 
@@ -1251,7 +1407,7 @@ html.js .rv.in{opacity:1; transform:none;}
         <h2 class="sec">Les 7&nbsp;%, et comment s'en affranchir</h2>
         <p class="sec-intro">Une seule mécanique explique tout le build du Gladiator. Si vous n'en lisez qu'un, lisez celui-là.</p>
 
-        <p><span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span> est normalement réservé aux cibles à terre. Un boss ne tombe jamais, il porte l'<strong>Incapacitated Immunity</strong>. Le jeu compense en lui donnant <strong>7&nbsp;% de chance de se reset à chaque coup que vous portez</strong> sur ce type de cible. Comme c'est l'essentiel de vos dégâts, tout votre build revient à faire tourner ce RNG plus vite, ou à le contourner.</p>
+        <p><span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span> est normalement réservé aux cibles à terre. Un boss ne tombe jamais, il porte l'<strong>Incapacitated Immunity</strong>. Le jeu compense en lui donnant <strong>7&nbsp;% de chance de se reset à chaque coup que vous portez</strong> sur ce type de cible.<a class="tip" href="#tips">infobulle</a> Comme c'est l'essentiel de vos dégâts, tout votre build revient à faire tourner ce RNG plus vite, ou à le contourner.</p>
 
         <div class="pyr">
           <div class="tier t1">
@@ -1462,7 +1618,7 @@ html.js .rv.in{opacity:1; transform:none;}
           <p>Ça explique d'un coup trois choses qui pouvaient sembler sans rapport — pourquoi Wisdom est en tête de cette liste, pourquoi on cherche du Smite sur le casque et sur la cape au chapitre suivant, et pourquoi le Genius Insight demande de verrouiller le Smite avant tout le reste.</p>
         </div>
 
-        <h3>Les liens d'âme, emplacement par emplacement</h3>
+        <h3>Les liens d'âme, emplacement par emplacement<a class="j1" href="#j1">test de lancement</a></h3>
         <p class="capt">Relevé sur les Gladiators les mieux classés en rating PvE et en combat power. Le haut de la liste s'échange sans drame. Le bas sert à remplir les slots supplémentaires que vous débloquerez avec le stuff.</p>
         <dl class="slots">
           <div><dt>Arme et Guard</dt><dd>Combat speed, weapon damage boost, damage boost, might, precision, multi-hit, attack</dd></div>
@@ -1528,7 +1684,7 @@ html.js .rv.in{opacity:1; transform:none;}
           <p>Deux réserves : la <strong>réduction de cooldown</strong> vaut le détour malgré ses 5&nbsp;% plafonnés, parce qu'elle touche toute votre boucle. Et ne dépensez rien dans les résistances au début.</p>
         </div>
 
-        <h3>Le Genius Insight</h3>
+        <h3>Le Genius Insight<a class="j1" href="#j1">test de lancement</a></h3>
         <p>Système lié aux pets : on les farme, on les « analyse » pour débloquer des paliers, et on roll les stats de <strong>neuf slots sur chacun des cinq plateaux</strong>. La seule source qui le détaille le traite comme du contenu endgame, donc ce qui suit est un cap, pas un objectif de lancement.</p>
         <div class="tw">
           <table>
@@ -1600,10 +1756,10 @@ html.js .rv.in{opacity:1; transform:none;}
 
         <div class="cmp cmp3">
           <div class="row">
-            <div class="q"><span class="skl" data-skill="ruinous-blow"><svg class="ic" aria-hidden="true"><use href="#i-assault"/></svg><span class="n">Ruinous Blow</span></span> — portée ou multi-hit ?</div>
+            <div class="q"><span class="skl" data-skill="ruinous-blow"><svg class="ic" aria-hidden="true"><use href="#i-assault"/></svg><span class="n">Ruinous Blow</span></span> — quel node en deuxième ?</div>
             <div class="c"><span class="who">Planner chiffré</span>Prend <strong>+12,5 m de portée</strong> comme deuxième node, avec la vitesse de skill et la durée du buff.</div>
             <div class="c"><span class="who">Relevé des top joueurs</span>Prend le node <strong>multi-hit</strong> à la place : « il ignore le block et l'esquive, mais surtout il le transforme en multi-hit ».</div>
-            <div class="c"><span class="who">Ce que je retiens</span>Le <strong>multi-hit en PvE</strong>. Un sort qui passe toutes les 10 s et qui frappe plusieurs fois, ce sont des chances supplémentaires sur les 7&nbsp;% d'<span class="skl" data-skill="overhead-slam"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-sword"/></svg><span class="n">Overhead Slam</span></span>. La portée reste le bon choix en PvP, où les échanges sont courts.</div>
+            <div class="c"><span class="who">Ce que je retiens</span>L'infobulle tranche, et pas dans mon sens.<a class="tip" href="#tips">infobulle</a> Il n'y a pas de node multi-hit sur ce sort. Les cinq options sont la vitesse de skill, la portée, le crit sur le sort, des dégâts supplémentaires au toucher, et « ignore le block et l'esquive » au dernier palier. C'est cette dernière que le relevé décrivait de travers. Donc <strong>la portée d'abord</strong>, elle coûte 8 là où l'autre demande 16, et vous repasserez sur le block quand vous aurez les points.</div>
           </div>
           <div class="row">
             <div class="q"><span class="skl" data-skill="wave-armor"><svg class="ic" aria-hidden="true"><use href="#i-wave"/></svg><span class="n">Wave Armor</span></span> — indispensable ou jamais joué ?</div>
@@ -1657,7 +1813,8 @@ html.js .rv.in{opacity:1; transform:none;}
 
         <ul class="srclist">
           <li><span class="lvl off">Planner chiffré</span><span>Une feuille de build complète, lue au pixel : les <strong>12 actifs</strong> avec leurs cinq options de node et celles qui sont retenues, les <strong>10 passifs</strong> avec leur niveau, les <strong>13 stigmas</strong>. Des données brutes, non interprétées. C'est elle qui tranche sur les noms, les niveaux et les libellés exacts. Le build affiché est orienté PvE et reste modeste — dix à douze niveaux achetés sur les sorts principaux — ce qui le rend lisible pour un budget de lancement. Version non confirmée, globale ou asiatique.</span></li>
-          <li><span class="lvl off">Relevé des top joueurs</span><span>Un guide complet de 21 minutes, par un joueur endgame sur la version taïwanaise qui a en plus relevé les builds des Gladiators les mieux classés sur des sites de classement. Il publie des <strong>niveaux moyens par sort</strong> et nomme chaque node par sa couleur, ce qui permet de le brancher directement sur le planner. Quand il contredit les autres, c'est lui que je garde.</span></li>
+          <li><span class="lvl com">Test de lancement</span><span>Deux créateurs ont publié sur la build du Launch Scale Test, l'un sur sa journée d'ouverture, l'autre après être monté au niveau 30 en comparant avec Taïwan. S'y ajoutent quatre infobulles du client, qui sont la seule donnée brute de cette page. Tout est en haut, dans l'encadré turquoise pour les infobulles et le doré pour le reste.</span></li>
+           <li><span class="lvl off">Relevé des top joueurs</span><span>Un guide complet de 21 minutes, par un joueur endgame sur la version taïwanaise qui a en plus relevé les builds des Gladiators les mieux classés sur des sites de classement. Il publie des <strong>niveaux moyens par sort</strong> et nomme chaque node par sa couleur, ce qui permet de le brancher directement sur le planner. Quand il contredit les autres, c'est lui que je garde.</span></li>
           <li><span class="lvl off">Dossier Taïwan, patch en cours</span><span>Un guide de 22 minutes par un joueur qui suit le chapitre 1 taïwanais. Il documente les <strong>changements récents</strong> mieux que les autres, avec le passage de <span class="skl" data-skill="zikels-blessing"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><span class="n">Zikel's Blessing</span></span> en buff personnel, le nombre de slots de stigma, et surtout le système des stigmas jaunes qui explique les niveaux au-dessus de 20. Il prévient lui-même que sa version est en avance sur la nôtre.</span></li>
           <li><span class="lvl com">Guide de lancement</span><span>Deux vidéos d'un créateur qui a remonté un Gladiator de zéro pour se caler sur la réalité d'un joueur de la globale. Il est le seul à donner des chiffres sur le <strong>budget de points</strong> — les 250 à la fin du leveling, les 420 en endgame, les 160-170 points Daevanion — et sur les sources de skill points. Sa limite, il désigne beaucoup de sorts à l'écran sans les nommer, donc une partie de son propos reste inutilisable pour un guide écrit.</span></li>
           <li><span class="lvl off">Vidéo macro dédiée</span><span>Six minutes sur la version coréenne, consacrées uniquement à la macro du Gladiator. C'est la source du chapitre 12, et la seule que j'aie trouvée qui montre les trois couches. La macro du jeu, le réglage de file d'attente, et la macro matérielle. Son auteur annonce lui-même qu'il vise le confort et non le DPS maximal, ce qui est exactement le genre de précision qui rend une source utilisable.</span></li>
@@ -1676,7 +1833,7 @@ html.js .rv.in{opacity:1; transform:none;}
       </section>
 
       <footer>
-        <p>Guide de classe uniquement, sur le Gladiator et sa progression sur la version globale. Dernière mise à jour le 18 septembre 2026, après le Launch Scale Test et avant l'ouverture des serveurs européens. Une partie des noms et des chiffres bougera au lancement. Je mettrai la page à jour dans les premières semaines.</p>
+        <p>Guide de classe uniquement, sur le Gladiator et sa progression sur la version globale. Dernière mise à jour le 19 septembre 2026, après le Launch Scale Test et avant l'ouverture des serveurs européens. Une partie des noms et des chiffres bougera au lancement. Je mettrai la page à jour dans les premières semaines.</p>
         <p>Contrairement à mon guide Assassin, je n'ai pas joué cette classe, ce document est un dossier recoupé, pas un retour d'expérience. Tout ce qui n'est pas confirmé par au moins deux sources est signalé comme tel. Habillage graphique original. Les icônes de compétences sont celles du jeu. Aion&nbsp;2 et ses visuels sont la propriété de NCSOFT Corporation.</p>
       </footer>
 
